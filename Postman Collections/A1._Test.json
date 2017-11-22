@@ -43,6 +43,7 @@
                   "tests[\"¶200\"] = responseCode.code === 200;",
                   "tests[\"¶OK\"] = responseCode.name.has(\"OK\");",
                   "",
+                  "",
                   "// Âp!ŒÀK/&	Ž(‹„Âpú°	",
                   "tests[\"¡	°žÂp\"] = paramAdds;",
                   "",
@@ -105,7 +106,144 @@
             "url": "{{api_url_http}}://{{api_url_dn}}/{{api_url_path_token}}",
             "description": null
           },
-          "response": []
+          "response": [
+            {
+              "id": "5030f89d-3f3f-e061-d8b9-6a71e0c7d048",
+              "name": "Token_cn·—",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "{{api_hd_az_basic}}{{other_blank}}{{api_hd_az_key}}"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "grant_type",
+                      "value": "password",
+                      "type": "text"
+                    },
+                    {
+                      "key": "username",
+                      "value": "24k",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "24k",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "{{api_url_http}}://{{api_url_dn}}/{{api_url_path_token}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "CF-RAY",
+                  "value": "3c19815fd24453ae-LAX",
+                  "name": "CF-RAY",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=UTF-8",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 22 Nov 2017 05:31:57 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Expires",
+                  "value": "0",
+                  "name": "Expires",
+                  "description": ""
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache",
+                  "name": "Pragma",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare-nginx",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "X-Application-Context",
+                  "value": "gateway:test61:4444",
+                  "name": "X-Application-Context",
+                  "description": ""
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": ""
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY",
+                  "name": "X-Frame-Options",
+                  "description": ""
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "name": "X-XSS-Protection",
+                  "description": ""
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Thu Nov 22 2018 03:19:55 GMT+0000 (UTC)",
+                  "httpOnly": true,
+                  "domain": "o8888.info",
+                  "path": "/",
+                  "secure": false,
+                  "value": "d2be8f729088ee2f1eab942f219d27bfa1511320795",
+                  "key": "__cfduid"
+                }
+              ],
+              "responseTime": "888",
+              "body": "{\"access_token\":\"a8c9440b-133f-461e-9cf5-28d48fe0342a\",\"token_type\":\"bearer\",\"refresh_token\":\"3633ffc1-31e5-4b58-b420-fe3d4345228a\",\"expires_in\":30287,\"scope\":\"openid\"}"
+            }
+          ]
         },
         {
           "_postman_id": "f75ebbba-892d-48e9-feef-e025c5f2b182",
